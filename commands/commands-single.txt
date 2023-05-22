@@ -1,0 +1,20 @@
+kubectl apply -f ant-chat-networkpolicy.yaml
+
+kubectl apply -f zookeeper-1-deployment.yaml
+kubectl apply -f zookeeper-1-service.yaml
+
+kubectl apply -f kafka-single-deployment.yaml
+kubectl apply -f kafka-single-service.yaml
+
+kubectl apply -f mongo-db-deployment.yaml
+kubectl apply -f mongo-db-service.yaml
+
+kubectl apply -f chat-api-deployment.yaml
+kubectl apply -f chat-api-service.yaml
+
+kubectl apply -f chat-ui-deployment.yaml
+kubectl apply -f chat-ui-service.yaml
+
+
+
+CTL - Command Talking Language

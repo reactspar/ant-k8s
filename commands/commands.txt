@@ -1,0 +1,47 @@
+**NOTE***
+This configuration contains configuration with kafka single and kafka with replicas.
+It may not work. Use commands-single.txt instead.
+******************************************************
+
+kubectl apply -f ant-chat-networkpolicy.yaml
+
+***single kafka start******
+kubectl apply -f zookeeper-1-deployment.yaml
+kubectl apply -f zookeeper-1-service.yaml
+
+kubectl apply -f kafka-single-deployment.yaml
+kubectl apply -f kafka-single-service.yaml
+***single kafka end******
+
+***repllicated kafka start***
+kubectl apply -f zookeeper-1-deployment.yaml
+kubectl apply -f zookeeper-1-service.yaml
+
+kubectl apply -f zookeeper-2-deployment.yaml
+kubectl apply -f zookeeper-2-service.yaml
+
+kubectl apply -f zookeeper-3-deployment.yaml
+kubectl apply -f zookeeper-3-service.yaml
+
+kubectl apply -f kafka-1-deployment.yaml
+kubectl apply -f kafka-1-service.yaml
+
+kubectl apply -f kafka-2-deployment.yaml
+kubectl apply -f kafka-2-service.yaml
+
+kubectl apply -f kafka-3-deployment.yaml
+kubectl apply -f kafka-3-service.yaml
+***repllicated kafka end***
+
+kubectl apply -f mongo-db-deployment.yaml
+kubectl apply -f mongo-db-service.yaml
+
+kubectl apply -f chat-api-deployment.yaml
+kubectl apply -f chat-api-service.yaml
+
+kubectl apply -f chat-ui-deployment.yaml
+kubectl apply -f chat-ui-service.yaml
+
+
+
+CTL - Command Talking Language

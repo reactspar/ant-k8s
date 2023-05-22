@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chat-ui-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: chat-ui
+  template:
+    metadata:
+      labels:
+        io.kompose.service: chat-ui
+        io.kompose.network/ant-chat: "true"
+    spec:
+      containers:
+        - image: mrangerran/chat-ui:1.0
+          name: chat-ui
+          ports:
+            - containerPort: 80
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: chat-ui-service
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 3000
+      targetPort: 80
+  selector:
+    io.kompose.service: chat-ui
