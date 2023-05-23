@@ -2,9 +2,6 @@
 This configuration contains configuration with kafka single and kafka with replicas.
 It may not work. Use commands-single.txt instead.
 ******************************************************
-
-kubectl apply -f ant-chat-networkpolicy.yaml
-
 ***single kafka start******
 kubectl apply -f zookeeper-1-deployment.yaml
 kubectl apply -f zookeeper-1-service.yaml
