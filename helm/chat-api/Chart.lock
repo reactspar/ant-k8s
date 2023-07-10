@@ -1,0 +1,9 @@
+dependencies:
+- name: mongo-db
+  repository: http://localhost:8087
+  version: 0.1.0
+- name: schema-registry
+  repository: http://localhost:8087
+  version: 0.1.0
+digest: sha256:50302baf2c85ad76138080c3b4c62c4684eae3228e83fd456680d7a03c7440a6
+generated: "2023-07-10T12:55:54.3993924+02:00"

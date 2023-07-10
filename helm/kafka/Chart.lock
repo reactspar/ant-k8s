@@ -1,0 +1,6 @@
+dependencies:
+- name: zookeeper
+  repository: http://localhost:8087
+  version: 0.1.0
+digest: sha256:a1a71e92ec6f4627689bed642d5aaa2cc33e215d15d50d0e5286adbf1f6d48f9
+generated: "2023-07-10T12:51:44.2036485+02:00"

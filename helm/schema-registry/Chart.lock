@@ -1,0 +1,6 @@
+dependencies:
+- name: kafka
+  repository: http://localhost:8087
+  version: 0.1.0
+digest: sha256:3878c30e827b43967ade4e11342ac7528ff8fe0709e5d2e6cb1f286cdc3dc7ba
+generated: "2023-07-10T12:54:00.5273258+02:00"

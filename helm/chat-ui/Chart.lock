@@ -1,0 +1,6 @@
+dependencies:
+- name: chat-api
+  repository: http://localhost:8087
+  version: 0.1.0
+digest: sha256:d493f018bc26763d77e35fb0f7b2726f72b482f6111338c0eadeee2160631cd1
+generated: "2023-07-10T12:56:44.348136+02:00"
